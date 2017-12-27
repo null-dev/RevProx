@@ -14,3 +14,8 @@ By streaming the file content directly to the client, RevProx enables **reverse 
 1. Download the script to your server: `wget "https://raw.githubusercontent.com/null-dev/RevProx/master/proxy.php"`.
 2. Configure the script (open it in your text editor, instructions inside the script on configuration).
 3. Rewrite all requests to the downloaded script.
+
+## Webdav
+RevProx can also be used to expose webdav servers as regular web servers. RevProx can authenticate to the webdav server on behalf of clients. RevProx will also generate a directory listing since some webdav servers will not generate one themselves.
+
+To use RevProx-Webdav, follow the instructions in the Usage section, replacing the download command with: `wget "https://raw.githubusercontent.com/null-dev/RevProx/master/proxy-webdav.php"`.
