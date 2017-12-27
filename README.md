@@ -19,3 +19,5 @@ By streaming the file content directly to the client, RevProx enables **reverse 
 RevProx can also be used to expose webdav servers as regular web servers. RevProx can authenticate to the webdav server on behalf of clients. RevProx will also generate a directory listing since some webdav servers will not generate one themselves.
 
 To use RevProx-Webdav, follow the instructions in the Usage section, replacing the download command with: `wget "https://raw.githubusercontent.com/null-dev/RevProx/master/proxy-webdav.php"`.
+
+Caveat: RevProx-Webdav will only generate directory listings if the URL ends in a slash (since it is not able to differentiate between directories and files from just the URL otherwise).
