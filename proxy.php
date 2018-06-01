@@ -58,7 +58,7 @@ function confReq($ch) {
 			$postData = tmpfile();
 			file_put_contents("php://input", $postData);
 		}
-		frewind($postData);
+		rewind($postData);
 
 		curl_setopt($ch, CURLOPT_PUT, 1);
 		curl_setopt($ch, CURLOPT_INFILESIZE, filesize($postData));
